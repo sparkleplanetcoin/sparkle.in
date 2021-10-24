@@ -1,0 +1,303 @@
+/*time line*/
+
+
+/**/
+
+.line-element:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.line-element {
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.line-element>* {
+    max-width: 100%;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.action-block .text h3 {
+    text-transform: uppercase;
+    font-family: "Raleway";
+}
+
+.action-block .text h3,
+.action-block .text p {
+    color: #ffffff;
+}
+
+.action .action-block {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 370px;
+    max-width: 100%;
+    margin: 30px 0;
+    border: 2px solid #f27c66;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.action .action-block span {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    line-height: 1;
+    left: 0;
+    bottom: 0;
+}
+
+.action .action-block i {
+    font-size: 98px;
+    color: #f27c66;
+    opacity: 0.25;
+    margin-left: -10px;
+    margin-bottom: -5px;
+}
+
+.action .action-block .text {
+    position: relative;
+    z-index: 2;
+    background-color: #f27c66;
+    margin-left: 66px;
+    padding: 40px;
+    text-align: left;
+}
+
+.action .action-block:before {
+    position: absolute;
+    right: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 30px solid #f27c66;
+    border-bottom: 30px solid transparent;
+}
+
+.action:last-child .action-block span {
+    right: 0;
+    left: auto;
+}
+
+.action .action-block i.flaticon-shopping {
+    margin-left: 0;
+}
+
+.action:last-child .action-block i {
+    margin-right: 2px;
+    margin-left: 0;
+}
+
+.action:last-child .action-block .text {
+    margin: 0 66px 0 0;
+}
+
+.action:last-child .action-block:before {
+    left: -32px;
+    border-right: 30px solid #f27c66;
+    border-left: 0;
+}
+
+.line-element .level-block {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 35px;
+    color: #ffffff;
+    background-color: #f27c66;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+}
+
+.line-element .level {
+    position: relative;
+    z-index: 1;
+}
+
+.line-element .level:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid #f27c66;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.line-element .level:after {
+    content: "";
+    position: absolute;
+    background-color: #e6e6e6;
+    left: 0;
+    top: 50%;
+    width: 50%;
+    height: 1px;
+    z-index: -1;
+}
+
+.line-element .level:first-child:before {
+    right: 0;
+    left: auto;
+    transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+}
+
+.line-element .level:first-child:after {
+    right: 0;
+    left: auto;
+}
+
+.line-element .action:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #e6e6e6;
+    width: 2px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+}
+
+.line-element .level+.action:after {
+    right: auto;
+    left: 0;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.line-element.color-2 .level:before,
+.color-2 .action .action-block {
+    border-color: #f9cb8f;
+}
+
+.line-element.color-2 .level-block,
+.color-2 .action .action-block .text {
+    background-color: #f9cb8f;
+}
+
+.color-2 .action .action-block:before {
+    border-left-color: #f9cb8f;
+}
+
+.color-2 .action:last-child .action-block:before {
+    border-right-color: #f9cb8f;
+}
+
+.color-2 .action .action-block i {
+    color: #f9cb8f;
+}
+
+.line-element.color-3 .level:before,
+.color-3 .action .action-block {
+    border-color: #18bb7c;
+}
+
+.line-element.color-3 .level-block,
+.color-3 .action .action-block .text {
+    background-color: #18bb7c;
+}
+
+.color-3 .action .action-block:before {
+    border-left-color: #18bb7c;
+}
+
+.color-3 .action:last-child .action-block:before {
+    border-right-color: #18bb7c;
+}
+
+.color-3 .action .action-block i {
+    color: #18bb7c;
+}
+
+@media screen and (max-width: 1200px) {
+    .action:first-child {
+        text-align: left;
+    }
+    .action:last-child {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .time-line .line-element:nth-child(2n) {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .time-line .line-element:nth-child(2n+1) {
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .line-element>* {
+        width: auto;
+    }
+    .line-element .action:after {
+        display: none;
+    }
+    .action .action-block:before {
+        top: -34px;
+        left: 50% !important;
+        right: auto;
+        -webkit-transform: translate(-50%, 0) rotate(-90deg);
+        -ms-transform: translate(-50%, 0) rotate(-90deg);
+        -o-transform: translate(-50%, 0) rotate(-90deg);
+        transform: translate(-50%, 0) rotate(-90deg);
+        /* display: none; */
+    }
+    .action:last-child .action-block:before {
+        -webkit-transform: translate(-50%, 0) rotate(90deg);
+        -ms-transform: translate(-50%, 0) rotate(90deg);
+        -o-transform: translate(-50%, 0) rotate(90deg);
+        transform: translate(-50%, 0) rotate(90deg);
+    }
+    .line-element .level:before {
+        display: none;
+    }
+    .line-element .level:after {
+        display: none;
+    }
+}
+
+
+/**/
