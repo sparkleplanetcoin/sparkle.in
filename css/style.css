@@ -25,7 +25,38 @@
 
        
 -------------------------------------------------------*/
- 
+/*  additional code by ashu tamar technical manager ELECTAT */
+
+   .cert-pro {
+    list-style: none;
+     display: flex;
+
+     
+    
+    
+}
+.cert-pro  img{
+    width: 3rem;
+    
+}
+.pro-head  {
+       
+       font-size: 11px;
+      
+        
+    
+}
+@media  (max-width:700px) {
+    .pro-head  {
+       
+        font-size: 8px;   
+ }
+ .cert-pro  img{
+    width: 3rem;
+    
+}
+}
+/*  additional code by ashu tamar technical manager ELECTAT */
 .active{
         color: #1963f8 !important;
 }
